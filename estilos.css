@@ -75,29 +75,59 @@ section {
 .second-main {
     width: 25%;
     display: grid;
-    height: 100vh;
-    overflow: hidden;
+    height: fit-content;
     gap: 20px;
     border-radius: 20px;
+    grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
 }
 
 .second-main img {
-    height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 20px;
 }
 
+.second-main > button {
+    align-self: baseline;
+    width: 50px;
+}
+
 .card {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     background-color: lightblue;
     border-radius: 15px;
     padding: 15px;
+    height: fit-content;
+
+}
+
+
+.card button{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    justify-self: end;
+}
+
+.card h3 {
+    grid-row: 3;
+}
+
+.card a {
+    grid-row: 3;
+    justify-self: end;
+    align-self: center;
 }
 
 .card > a {
-    justify-self: end;
     text-decoration: underline;
+}
+
+.fotos-container button {
+    padding: 5px;
+    border-radius: 10px;
 }
 
 .image_background {
@@ -182,4 +212,93 @@ section {
 
 .right-first-main {
     width: 50%;
+}
+
+@media screen and (max-width: 767px){
+    section {
+        display: grid;
+        margin-top: 0px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+
+    nav {
+        margin-bottom: 0px;
+    }
+
+    .left-first-main p{
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .left-first-main ul{
+        font-size: 10px;
+        padding: 6px;
+        width: 40px;
+    }
+
+    .right-first-main h1 {
+        font-size: 16px;
+        margin-right: 30px;
+    }
+
+    .first-main {
+        width: 100%;
+        height: auto;
+    }
+
+    .second-main {
+        width: auto;
+    }
+
+    .image_background {
+        height: 65%;
+
+    }
+    
+    .second-main p{
+        font-size: 15px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .second-main h3{
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    .second-main img{
+        height: 30%;
+        overflow: hidden;
+    }
+
+}
+
+@media screen and (orientation: landscape){
+    
+}
+
+.ocultar {
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}
+
+.dark {
+    background-color: #000;
+    color: #fff
+}
+
+.posts {
+    padding: 20px;
+}
+.post {
+    padding: 20px;
+    border: solid 1px lightblue;
+    margin: 10px 0;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 50%);
+    border-radius: 20px;
 }

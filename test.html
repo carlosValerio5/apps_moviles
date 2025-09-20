@@ -20,14 +20,19 @@
             <li class="nav-item"><a href="#">Talk to us</a></li>
         </ul>
         <div>
-            <button>Search</button>
+            <button id="button-search">Search</button>
             <button>Menu</button>
         </div>
     </nav>
     <section>
         <div class="first-main">
             <h1>Best of the week</h1>
-            <a href="#">See all posts.</a>
+            <a href="#" id="ver-todos">See all posts.</a>
+            <div class="posts ocultar" id="posts">
+                <div class="post">Experiencia como podcaster.</div>
+                <div class="post">Como hacerte viral.</div>
+                <div class="post">Como crear reels para redes sociales.</div>
+            </div>
             <div class="image_background">
                 <div class="left-first-main">
                     <p>Sep 06, 2022</p>
@@ -47,12 +52,24 @@
     <div class="second-main">
         <div class="card">
             <p>ADS</p>
+            <button id="mas">+</button>
             <p>Become A<br>broadcast member</p>
             <h3>Real talk in a corporate world</h3>
             <a href="#">learn more.</a>
         </div>
-        <img src="edoardo-giudici-saraval-NCVtwT6Lc7Q-unsplash.jpg" alt="porsche" class="grid-item">
+        <div class="fotos-container">
+            <button id="ver-fotos">See all pics</button>
+            <div class="imagenes ocultar" id = "pics">
+                <img src="edoardo-giudici-saraval-NCVtwT6Lc7Q-unsplash.jpg" alt="porsche" class="grid-item">
+                <img src="edoardo-giudici-saraval-NCVtwT6Lc7Q-unsplash.jpg" alt="porsche" class="grid-item">
+                <img src="edoardo-giudici-saraval-NCVtwT6Lc7Q-unsplash.jpg" alt="porsche" class="grid-item">
+                <img src="edoardo-giudici-saraval-NCVtwT6Lc7Q-unsplash.jpg" alt="porsche" class="grid-item">
+                <img src="edoardo-giudici-saraval-NCVtwT6Lc7Q-unsplash.jpg" alt="porsche" class="grid-item">
+                <img src="edoardo-giudici-saraval-NCVtwT6Lc7Q-unsplash.jpg" alt="porsche" class="grid-item">
+            </div>
+        </div>
     </div>
 </section>
 </body>
+<script src="index.js"></script>
 </html>
